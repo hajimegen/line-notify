@@ -14,7 +14,7 @@ import requests
 def notify_message(message):
         LINE_NOTIFY_TOKEN = "v5umZRPB958apwnBiKy8w0dsykBrYVsALc5xDWMuWlV"
         url = 'https://notify-api.line.me/api/notify'
-        #message = 'テスト'
+        #message = '[リマインド]リネン交換の呼びかけをお願いします'
 
         headers = {
             'Authorization': f'Bearer {LINE_NOTIFY_TOKEN}'
@@ -31,7 +31,7 @@ def notify_message(message):
         )
 
 def main():
-    message ='テスト'
+    message ='[リマインド]リネン交換の呼びかけをお願いします'
     notify_message(message)
     
 if __name__ == "__main__":
