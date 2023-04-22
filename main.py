@@ -31,7 +31,7 @@ def notify_message(message):
         )
 
 def main():
-    message ='テストでっす'
+    message ='テスト'
     notify_message(message)
     
 if __name__ == "__main__":
